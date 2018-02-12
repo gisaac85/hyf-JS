@@ -1,7 +1,7 @@
 /*jshint esnext: true */
 
 //1. Write a console.log statement saying "Hello World!" for each language that you know.
-var languages = {
+let languages = {
     russian: "Привет мир\!",
     italian: "Ciao mondo \!",
     catalan: "Hola món \!"
