@@ -1,9 +1,17 @@
 /*jshint esnext: true */
 
 //1. Write a console.log statement saying "Hello World!" for each language that you know.
-console.log("Привет мир \!"); //Russian
-console.log("Ciao mondo \!"); //Italian
-console.log("Hola món \!");  //Catalan
+var languages = {
+    russian: "Привет мир\!",
+    italian: "Ciao mondo \!",
+    catalan: "Hola món \!"
+};
+for (let hello in languages) {
+    let value = languages[hello];
+
+    console.log(value);
+
+}
 
 console.log('\n');
 
