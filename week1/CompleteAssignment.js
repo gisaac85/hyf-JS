@@ -1,5 +1,3 @@
-/*jshint esnext: true */
-
 //1. Write a console.log statement saying "Hello World!" for each language that you know.
 let languages = {
     russian: "Привет мир\!",
@@ -69,11 +67,9 @@ let a = Math.round(z);
 console.log("a= " + a);
 //5.5 So now we have z and a find a way to compare the two values and store the highest of the two in a new variable.
 let max;
-if (a > z)
-{
+if (a > z) {
     max = a;
-}
-else {
+} else {
     max = z;
 }
 //5.6 Console.log the highest value.
@@ -83,7 +79,7 @@ console.log('\n');
 
 //6. Arrays!
 //6.1 Declare an empty array.Make sure that the name you choose indicates 'plurality', because an array is capable of 
-let myFirstArray=[];
+let myFirstArray = [];
 //6.2 Write a console.log statement that explains in words what you think the value of the array is.
 console.log("the value of Array will be: undefined");
 //6.3 Console.log your array.
@@ -113,129 +109,116 @@ console.log('\n');
 //8.1 First declare at least four variables and assign them different data types.
 //8.2 For each variable write a console.log statement that logs the value.
 let firstVar = 15; // integer 
-let secondVar = "Hello JavaScript...";  //string
+let secondVar = "Hello JavaScript..."; //string
 let thirdVar = -3.5; //float
-let fourthVar = { width: 50, height: 100 }; //object
+let fourthVar = {
+    width: 50,
+    height: 100
+}; //object
 let fifthVar = 20; // integer
 let sixthVar = true; //boolean
-console.log("The value of my variable firstVar is: "+firstVar);
-console.log("The value of my variable secondVar is: "+secondVar);
-console.log("The value of my variable thirdVar is: "+thirdVar);
-console.log("The value of my variable fourthVar is: "+fourthVar);
+console.log("The value of my variable firstVar is: " + firstVar);
+console.log("The value of my variable secondVar is: " + secondVar);
+console.log("The value of my variable thirdVar is: " + thirdVar);
+console.log("The value of my variable fourthVar is: " + fourthVar);
 console.log("The value of my variable fifthVar is: " + fifthVar);
 console.log("The value of my variable fifthVar is: " + sixthVar);
 //8.3 Now write a console.log statement wherein you first explain in words what you think the type of your variables is.
 console.log('\n');
 console.log("The type of my variable firstVar is: INTEGER NUMBER");
-console.log("The type of my variable secondVar is: STRING " );
-console.log("The type of my variable thirdVar is: FLOAT NUMBER " );
+console.log("The type of my variable secondVar is: STRING ");
+console.log("The type of my variable thirdVar is: FLOAT NUMBER ");
 console.log("The type of my variable fourthVar is: OBJECT ");
 console.log("The type of my variable fifthVar is: INTEGER NUMBER ");
 console.log("The type of my variable sixthVar is: BOOLEAN ");
 //8.4 Now use typeof to log the actual type of your variables.
 console.log('\n');
-console.log("The type of my variable firstVar is: "+typeof firstVar);
-console.log("The value of my variable secondVar is: " +typeof secondVar);
-console.log("The value of my variable thirdVar is: " +typeof thirdVar);
-console.log("The value of my variable fourthVar is: " +typeof fourthVar);
+console.log("The type of my variable firstVar is: " + typeof firstVar);
+console.log("The value of my variable secondVar is: " + typeof secondVar);
+console.log("The value of my variable thirdVar is: " + typeof thirdVar);
+console.log("The value of my variable fourthVar is: " + typeof fourthVar);
 console.log("The value of my variable fifthVar is: " + typeof fifthVar);
 console.log("The value of my variable sixthVar is: " + typeof sixthVar);
 console.log('\n');
 //8.5 Now compare the types of your different variables with one another.
 //8.6 Make sure to also show a message when the variables you are comparing are not the same type.
-if (typeof firstVar === typeof secondVar)
-{
+if (typeof firstVar === typeof secondVar) {
     console.log("firstVar and secondVar : SAME TYPE");
-}
-else {
+} else {
     console.log("firstVar and secondVar : NOT SAME TYPE");
 }
 if (typeof firstVar === typeof thirdVar) {
     console.log("firstVar and thirdVar : SAME TYPE");
-}
-else {
+} else {
     console.log("firstVar and thirdVar : NOT SAME TYPE");
 }
 if (typeof firstVar === typeof fourthVar) {
     console.log("firstVar and fourthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("firstVar and fourthVar : NOT SAME TYPE");
 }
 if (typeof firstVar === typeof fifthVar) {
     console.log("firstVar and fifthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("firstVar and fifthVar : NOT SAME TYPE");
 }
 if (typeof firstVar === typeof sixthVar) {
     console.log("firstVar and sixthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("firstVar and sixthVar : NOT SAME TYPE");
 }
 console.log('\n');
 if (typeof secondVar === typeof thirdVar) {
     console.log("secondVar and thirdVar : SAME TYPE");
-}
-else {
+} else {
     console.log("secondVar and thirdVar : NOT SAME TYPE");
 }
 if (typeof secondVar === typeof fourthVar) {
     console.log("secondVar and fourthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("secondVar and fourthVar : NOT SAME TYPE");
 }
 if (typeof secondVar === typeof fifthVar) {
     console.log("secondVar and fifthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("secondVar and fifthVar : NOT SAME TYPE");
 }
 if (typeof secondVar === typeof sixthVar) {
     console.log("secondVar and sixthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("secondVar and sixthVar : NOT SAME TYPE");
 }
 console.log('\n');
 if (typeof thirdVar === typeof fourthVar) {
     console.log("thirdVar and fourthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("thirdVar and fourthVar : NOT SAME TYPE");
 }
 if (typeof thirdVar === typeof fifthVar) {
     console.log("thirdVar and fifthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("thirdVar and fifthVar : NOT SAME TYPE");
 }
 if (typeof thirdVar === typeof sixthVar) {
     console.log("thirdVar and sixthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("thirdVar and sixthVar : NOT SAME TYPE");
 }
 console.log("\n");
 if (typeof fourthVar === typeof fifthVar) {
     console.log("fourthVar and fifthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("fourthVar and fifthVar : NOT SAME TYPE");
 }
 if (typeof fourthVar === typeof sixthVar) {
     console.log("fourthVar and sixthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("fourthVar and sixthVar : NOT SAME TYPE");
 }
 console.log("\n");
 if (typeof fifthVar === typeof sixthVar) {
     console.log("fifthVar and sixthVar : SAME TYPE");
-}
-else {
+} else {
     console.log("fifthVar and sixthVar : NOT SAME TYPE");
 }
 console.log("\n");
@@ -243,9 +226,11 @@ console.log("\n");
 //9. If x equals 7, and the only other statement is x = x % 3, what would be the new value of x?
 x = 7;
 x = x % 3;
-console.log("7 % 3 = "+x);
+console.log("7 % 3 = " + x);
 //9.1 Add at least 3 console.log statements in which you show that you understand what % does.
-let num1 = 10, num2 = 20, num3 = 11;
+let num1 = 10,
+    num2 = 20,
+    num3 = 11;
 num1 %= 2;
 num2 %= 3;
 num3 %= 4;
@@ -262,10 +247,9 @@ console.log(newArr10);
 console.log("\n");
 
 //10.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this?
-if (isFinite(6)=== isFinite(10)) {
+if (isFinite(6) === isFinite(10)) {
     console.log("Infinites are equal");
-}
-else {
+} else {
     console.log("Infinites are NOT equal");
 }
 //10.3 Add console.log statements to the above program's in which you show that you understand the concepts (just like you've done in the above assignments).
