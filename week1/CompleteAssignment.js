@@ -103,7 +103,7 @@ let favoriteAnimals = ["cat", "fish", "canary", "Dolphin"];
 console.log(favoriteAnimals);
 // 6.6 Add a statement that adds Daan's favorite animal ('baby pig') to the
 // existing array.
-favoriteAnimals.push("baby pig")
+favoriteAnimals.push("baby pig");
 //6.7 Log your new array!
 console.log(favoriteAnimals);
 console.log('\n');
