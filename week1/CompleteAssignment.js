@@ -272,7 +272,10 @@ console.log("\n");
 
 // 10.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0?
 // How can you test this?
-if (isFinite(6) === isFinite(10)) {
+function checkInf(i) {
+    return i / 0;
+}
+if (checkInf(6) === checkInf(10)) {
     console.log("Infinites are equal");
 } else {
     console.log("Infinites are NOT equal");
