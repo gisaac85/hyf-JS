@@ -4,6 +4,15 @@ p {
     font-size: 38px;
 }
 
+.button {
+    width: 75px;
+    height: 25px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 .header {
     margin-top: 5%;
     position: relative;
