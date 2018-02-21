@@ -8,15 +8,11 @@ say.onclick = function () {
     var helloResult = 'Hello <b>' + fname + '</b> ' + lname;
 
     document.getElementById('result').innerHTML = helloResult;
-    for (var i = 1; i <= 7; i++) {
-        var str = "";
-        for (var j = i; j >= 1; j--) {
-            str += "*";
-        }
-        document.getElementById("print").innerHTML = str;
-    }
 
-
+    document.getElementById("print").innerHTML = str;
 }
+
+
+
 
 //document.getElementById('say').addEventListener('click', say_hi);
