@@ -215,10 +215,18 @@ function printAdvertisement() {
 
 
     for (let j = 0; j < vehiclesList.length - 1; j++) {
+        if (vehiclesList[j].type.endsWith('s')) {
+            jj += vehiclesList[j].type + 'es' + ',' + ' ';
+        } else {
+            jj += vehiclesList[j].type + 's' + ',' + ' ';
+        }
 
-        jj += vehiclesList[j].type + 's' + ',' + ' ';
     }
-    jj += 'and ' + vehiclesList[vehiclesList.length - 1].type + 's';
+    if (vehiclesList[vehiclesList.length - 1].type.endsWith('s')) {
+        jj += 'and ' + vehiclesList[vehiclesList.length - 1].type + 'es';
+    } else {
+        jj += 'and ' + vehiclesList[vehiclesList.length - 1].type + 's';
+    }
 
 
     console.log("Amazing Joe's Garage, we service : " + jj + '.');
@@ -228,7 +236,7 @@ printAdvertisement();
 
 console.log("\n");
 //11.What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
-addvehicles("Truck"); //Add new vehicle to the list.
+addvehicles("Bus"); //Add new vehicle to the list.
 printAdvertisement(); // print the advertisment with a new vehicle :) :)
 
 console.log("\n");
