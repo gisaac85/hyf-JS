@@ -120,7 +120,7 @@ console.log(3 === 3 ? "true" : "false");
 
 console.log("\n");
 //6.Create a function called vehicle, like before, but takes another parameter called age, so that vehicle("blue", 1, 5) prints "a blue used car"
-function vehicle(color, code, age) {
+function vehicle(color, age, code) {
     if (code == 1) {
         code = "car";
     } else if (code == 2) {
@@ -128,26 +128,20 @@ function vehicle(color, code, age) {
     }
     switch (age) {
         case 1:
-            age = "OLD";
+            age = "USED";
             break;
         case 2:
-            age = "Middel Age";
+            age = "As Good As NEW";
             break;
         case 3:
-            age = "Nineteenth";
-            break;
-        case 4:
-            age = "2000's";
-            break;
-        case 5:
             age = "NEW";
             break;
 
     };
 
-    return `a ${color} ${code} ${age}`;
+    return `a ${color} ${age} ${code}`;
 }
-console.log(vehicle("red", 1, 5));
+console.log(vehicle("red", 1, 2));
 
 
 console.log("\n");
@@ -180,21 +174,15 @@ console.log(vehiclesList[2]);
 
 console.log("\n");
 //9.Change the function vehicle to use the list of question 7. So that vehicle("green", 3, 1) prints "a green new caravan".
-function vehicleNew(color, vList, age) {
+function vehicleNew(color, age, vList) {
     switch (age) {
         case 1:
-            age = "OLD";
+            age = "USED";
             break;
         case 2:
-            age = "Middel Age";
+            age = "As Good As NEW";
             break;
         case 3:
-            age = "Nineteenth";
-            break;
-        case 4:
-            age = "2000's";
-            break;
-        case 5:
             age = "NEW";
             break;
 
@@ -203,15 +191,15 @@ function vehicleNew(color, vList, age) {
 
     let vv = vehiclesList[vList].type;
 
-    return `a ${color} ${vv} ${age} `;
+    return `a ${color} ${age} ${vv}`;
 }
-console.log(vehicleNew("green", 2, 3));
+console.log(vehicleNew("green", 2, 2));
 
 console.log("\n");
 //10.Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.)
 function printAdvertisement() {
 
-    let jj = new Array();
+    let jj = "";
 
 
     for (let j = 0; j < vehiclesList.length - 1; j++) {
